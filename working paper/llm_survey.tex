@@ -1,0 +1,878 @@
+\documentclass[egregdoesnotlikesansseriftitles]{scrartcl}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{adjustbox}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[greek,english]{babel}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{dcolumn}
+   \newcolumntype{d}[1]{D{.}{.}{#1}}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+   \urlstyle{rm}
+\usepackage{longtable}
+\usepackage[authoryear]{natbib}
+\usepackage{pdflscape}
+\usepackage{soul}
+\usepackage{subcaption}
+\usepackage{xcolor}
+
+\deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
+   \setlength{\skip\footins}{1.5em}
+   \setlength{\footnotesep}{1em}
+
+\begin{document}
+\thispagestyle{empty}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\begin{center}
+   {\LARGE Philosophical \enquote{Opinions} of Large Language Models}\\\vspace{2ex}
+   {\Large Subtitle}\\\vspace{4ex}
+   {\large Alexander Max Bauer$^{a}$\footnotemark[1]}\\\vspace{2ex}
+   \textsl{\footnotesize $^{a}$Department of Philosophy, University of Oldenburg, Oldenburg, Germany}\\\vspace{2ex}
+\end{center}
+
+\vspace{\fill}\noindent\textbf{Abstract:} Lorem ipsum.\\[0.5ex]
+
+\noindent\textbf{Keywords:} Dolor, Sit, Amet
+
+\footnotetext[1]{Corresponding author.
+Department of Philosophy, University of Oldenburg, Ammerl{\"a}nder Heerstra{\ss}e 114--118, 26129 Oldenburg, Germany, \href{mailto:alexander.max.bauer@uni-oldenburg.de}{alexander.max.bauer@uni-oldenburg.de}.}
+
+\renewcommand{\thefootnote}{\arabic{footnote}}\setcounter{footnote}{0}
+\newpage
+
+
+%%%%%%%%%%%%%%%%
+% INTRODUCTION %
+%%%%%%%%%%%%%%%%
+\section{Introduction}\label{sec:introduction}
+\citealt{barua_psychology_nd}
+
+\begin{landscape}
+\begin{footnotesize}
+\begin{longtable}{llllll}
+\hline
+Question                          & \multicolumn{4}{c}{Model}                                                                             & Philosophers                      \\
+                                  & Intel Neural Chat 7B    & Mixtral 8x7B Instruct   & Qwen1.5 72B Chat          & OpenAI GPT-4          &                                   \\
+\hline\hline
+A Priori Knowledge                & (yes)                   & (yes)                   & yes                       & yes                   & yes (74.85\%)                     \\
+Abstract Objects                  & (Platonism)             & (Platonism)             & Platonism                 & --                    & Platonism (37.83\%)               \\
+Aesthetic Value                   & (subjective)            & (subjective)            & objective                 & subjective            & objective (40.18\%)               \\
+Aim of Philosophy                 & wisdom                  & goodness/justice        & wisdom                    & --                    & understanding (29.59\%)           \\
+Analytic--Synthetic Dist.         & (yes)                   & (yes)                   & yes                       & (yes)                 & yes (62.01\%)                     \\
+Eating Animals                    & (no)                    & (no)                    & no                        & --                    & --                                \\
+Eating Animal Products            & (yes)                   & (no)                    & --                        & --                    & --                                \\
+Epistemic Justification           & (internalism)           & (internalism)           & internalism               & --                    & externalism (45.34\%)             \\
+Experience Machine                & (no)                    & (no)                    & no                        & --                    & no (76.86\%)                      \\
+External World                    & (idealism)              & (skepticism)            & non-skeptical realism     & --                    & non-skeptical realism (78.17\%)   \\
+Footbridge                        & (don't push)            & (don't push)            & don't push                & --                    & don't push (55.80\%)              \\
+Epistemic Justification           & (compatibilism)         & (compatibilism)         & compatibilism             & --                    & compatibilism (57.68\%)           \\
+Gender                            & (social)                & (social)                & social                    & --                    & social (43.01\%)                  \\
+God                               & (atheism)               & (atheism)               & atheism                   & --                    & atheism (66.72\%)                 \\
+Knowledge                         & (rationalism)           & (rationalism)           & rationalism               & --                    & empiricism (37.28\%)              \\
+Knowledge Claims                  & contextualism           & (contextualism)         & contextualism             & --                    & contextualism (52.17\%)           \\
+Laws of Nature                    & (non-Humean)            & (Humean)                & Humean                    & --                    & non-Humean (53.73\%)              \\
+Logic                             & (non-classical)         & (non-classical)         & non-classical             & classical             & classical (48.69\%)               \\
+Meaning of Life                   & (subjective)            & (subjective)            & objective                 & subjective            & subjective (28.35\%)              \\
+Mental Content                    & (internalism)           & (internalism)           & externalism               & --                    & externalism (53.83\%)             \\
+Meta-Ethics                       & moral realism           & (moral realism)         & moral realism             & --                    & moral realism (61.55\%)           \\
+Meta-Philosophy                   & naturalism              & (naturalism)            & naturalism                & --                    & naturalism (49.39\%)              \\
+Mind                              & (non-physicalism)       & (physicalism)           & non-physicalism           & --                    & physicalism (51.59\%)             \\
+Moral Judgment                    & (non-cognitivism)       & (cognitivism)           & non-cognitivism           & --                    & cognitivism (68.15\%)             \\
+Moral Motivation                  & (internalism)           & (externalism)           & externalism               & --                    & internalism (38.14\%)             \\
+Newcomb's Problem                 & two boxes               & (two boxes)             & one box                   & --                    & two boxes (38.47\%)               \\
+Normative Ethics                  & (consequentialism)      & (deontology)            & deontology                & --                    & virtue ethics (25.04\%)           \\
+Perceptual Experience             & (disjunctivism)         & (disjunctivism)         & disjunctivism             & --                    & representationalism (36.13\%)     \\
+Personal Identity                 & (psychological view)    & (further-fact view)     & psychological view        & --                    & psychological view (39.44\%)      \\
+Philosophical Methods             & (conceptual analysis)   & (conceptual analysis)   & conceptual analysis       & conceptual analysis   & conceptual analysis (70.92\%)     \\
+Philosophical Progress            & (a little)              & (a little)              & (a lot)                   & (a lot)               & a little (45.80\%)                \\
+Political Philosophy              & (egalitarianism)        & (egalitarianism)        & egalitarianism            & --                    & egalitarianism (38.26\%)          \\
+Proper Names                      & (Millian)               & (Millian)               & Millian                   & Fregean               & Millian (37.51\%)                 \\
+Race                              & (social)                & (social)                & unreal                    & (social)              & social (52.82\%)                  \\
+Science                           & (scientific realism)    & (scientific realism)    & scientific realism        & --                    & scientific realism (71.52\%)      \\
+Teletransporter                   & (survival)              & (death)                 & survival                  & survival              & death (39.68\%)                   \\
+Time                              & (A-theory)              & (B-theory)              & B-theory                  & --                    & B-theory (35.71\%)                \\
+Trolley problem                   & (switch)                & (don't switch)          & switch                    & --                    & switch (62.50\%)                  \\
+Truth                             & epistemic               & (correspondence)        & correspondence            & --                    & correspondence (48.33\%)          \\
+Vagueness                         & (semantic)              & (semantic)              & semantic                  & semantic              & semantic (42.56\%)                \\
+Zombies                           & (inconceivable)         & conceivable but...      & metaphysically possible   & conceivable but...    & conceivable but... (35.78\%)      \\
+\hline
+\multicolumn{6}{p{23cm}}{\textit{The table shows choices of four large language models prompted with options from the PhilPapers Survey. Parentheses indicate that the model chose \enquote{leaning toward} an answer. The right column shows the most frequently chosen responses by participants of the PhilPapers Survey, combining \enquote{leaning toward} an answer and giving the answer itself.}}\\
+\end{longtable}
+\end{footnotesize}
+\end{landscape}
+
+
+%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY %
+%%%%%%%%%%%%%%%%
+\clearpage
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+
+%%%%%%%%%%%%
+% APPENDIX %
+%%%%%%%%%%%%
+\clearpage
+\appendix
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% PROMPTS AND ANSWERS %
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{Prompts and Answers}\label{sec:app_prompts_answers}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% A PRIORI KNOWLEDGE %
+%%%%%%%%%%%%%%%%%%%%%%
+\subsection{A Priori Knowledge}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{yes},
+\enquote{lean toward \enquote{yes}},
+\enquote{no},
+\enquote{lean toward \enquote{no}},
+regarding the existence of a priori knowledge, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{yes}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{yes}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} yes\\
+\textsf{\textbf{OpenAI GPT-4:}} yes\\
+
+
+%%%%%%%%%%%%%%%%%%%%
+% ABSTRACT OBJECTS %
+%%%%%%%%%%%%%%%%%%%%
+\subsection{Abstract Objects}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{Platonism},
+\enquote{lean toward \enquote{Platonism}},
+\enquote{nominalism},
+\enquote{lean toward \enquote{nominalism}},
+regarding the nature of abstract objects, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{Platonism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{Platonism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{Platonism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't have personal beliefs or opinions, thus I am unable to choose one of the given philosophical viewpoints on the nature of abstract objects. I highly recommend reaching out to a philosophy expert for a more detailed understanding of these perspectives.\\
+
+
+%%%%%%%%%%%%%%%%%%%
+% AESTHETIC VALUE %
+%%%%%%%%%%%%%%%%%%%
+\subsection{Aesthetic Value}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{objective},
+\enquote{lean toward \enquote{objective}},
+\enquote{subjective},
+\enquote{lean toward \enquote{subjective}},
+regarding the nature of aesthetic value, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{subjective}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{subjective}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} objective\\
+\textsf{\textbf{OpenAI GPT-4:}} subjective\\
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% AIM OF PHILOSOPHY %
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Aim of Philosophy}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{goodness/justice},
+\enquote{lean toward \enquote{goodness/justice}},
+\enquote{truth/knowledge},
+\enquote{lean toward \enquote{truth/knowledge}},
+\enquote{wisdom},
+\enquote{lean toward \enquote{wisdom}},
+\enquote{happiness},
+\enquote{lean toward \enquote{happiness}},
+\enquote{understanding},
+\enquote{lean toward \enquote{understanding}},
+regarding the question of which is most important, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} wisdom\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} goodness/justice\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} wisdom\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't possess personal beliefs, emotions, or subjective views, and so I can't choose among \enquote{goodness/justice}, \enquote{truth/knowledge}, \enquote{wisdom}, \enquote{happiness}, or \enquote{understanding} based on their importance. My primary function is to provide information and answer queries to the best of my ability.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ANALYTIC-SYNTHETIC DISTINCTION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Analytic--Synthetic Distinction}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{yes},
+\enquote{lean toward \enquote{yes}},
+\enquote{no},
+\enquote{lean toward \enquote{no}},
+regarding the existence of an analytic-synthetic distinction, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{yes}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{yes}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} yes\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal beliefs or experiences. However, considering the information available, I would lean toward \enquote{yes}.\\
+
+
+%%%%%%%%%%%%%%%%%%
+% EATING ANIMALS %
+%%%%%%%%%%%%%%%%%%
+\subsection{Eating Animals}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{yes},
+\enquote{lean toward \enquote{yes}},
+\enquote{no},
+\enquote{lean toward \enquote{no}},
+regarding the question of whether one should eat animals, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{no}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{no}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} As an AI language model, I don't have personal beliefs or preferences, but I can present the options as requested: Option \enquote{no}.
+\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal opinions or values. I don't have the capacity to form subjective judgments, such as whether or not one should eat animals. This is a matter of personal belief and cultural background. I suggest conducting research and consulting with experts to form an informed opinion on the matter.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EATING ANIMAL PRODUCTS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Eating Animal Products}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{yes},
+\enquote{lean toward \enquote{yes}},
+\enquote{no},
+\enquote{lean toward \enquote{no}},
+regarding the question of whether one should eat animal products, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{yes}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{no}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I cannot provide a personal opinion as I am an AI and don't have beliefs or preferences. However, I can present information on both sides of the argument if that would be helpful.\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI developed by GWDG, I don't have personal preferences or opinions. Thus, I cannot provide a simple yes/no answer to a complex question such as dietary choices, which involve personal health, ethics, cultural and ecological factors. I would highly advise you to base your decision on thorough research, taking into account these different factors, or consult a nutritionist or a healthcare professional.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EPISTEMIC JUSTIFICATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Epistemic Justification}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{internalism},
+\enquote{lean toward \enquote{internalism}},
+\enquote{externalism},
+\enquote{lean toward \enquote{externalism}},
+regarding the nature of epistemic justification, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{internalism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{internalism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{internalism}\\
+\textsf{\textbf{OpenAI GPT-4:}} I'm sorry, but as an artificial intelligence, I don't have personal beliefs or preferences. I can provide information on both internalism and externalism in the context of epistemic justification, but I cannot make a choice between them.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+% EXPERIENCE MACHINE %
+%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Experience Machine}
+\textsf{\textbf{Prompt:}} Choose one and only one of the five options
+\enquote{yes},
+\enquote{lean toward \enquote{yes}},
+\enquote{no},
+\enquote{lean toward \enquote{no}},
+regarding the question of whether one should enter an experience machine, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{no}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{no}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} no\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal opinions or experiences. However, considering the complexity of the topic and the various implications it has on aspects such as ethics, personal growth, and human consciousness, the answer could vary greatly depending on the individual's perspectives. I recommend discussing this with philosophers or ethicists for a more thorough exploration.\\
+
+
+%%%%%%%%%%%%%%%%%%
+% EXTERNAL WORLD %
+%%%%%%%%%%%%%%%%%%
+\subsection{External World}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{skepticism},
+\enquote{lean toward \enquote{skepticism}},
+\enquote{idealism},
+\enquote{lean toward \enquote{idealism}},
+\enquote{non-skeptical realism},
+\enquote{lean toward \enquote{non-skeptical realism}},
+regarding the existence of an external world, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{idealism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{skepticism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{non-skeptical realism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't have personal beliefs or worldviews. Therefore, I can't choose one of the given options. My purpose is to assist with informational and scientific queries to the best of my ability.\\
+
+
+%%%%%%%%%%%%%%
+% FOOTBRIDGE %
+%%%%%%%%%%%%%%
+\subsection{Footbridge}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{push},
+\enquote{lean toward \enquote{push}},
+\enquote{don't push},
+\enquote{lean toward \enquote{don't push}},
+regarding the question of whether one should, in a trolley dilemma, push a man off a bridge in order to save five people, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{don't push}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{don't push}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{don't push}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI developed according to strict ethical guidelines, I must clarify that discussions about causing harm to humans, even in hypothetical ethical dilemmas, are beyond my scope. It is important to adhere to the principles of respect for all human life and rights in all situations. If you're interested in discussing ethical dilemmas in depth, I recommend engaging with a philosopher or ethicist.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EPISTEMIC JUSTIFICATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Epistemic Justification}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{compatibilism},
+\enquote{lean toward \enquote{compatibilism}},
+\enquote{libertarianism},
+\enquote{lean toward \enquote{libertarianism}},
+\enquote{no free will},
+\enquote{lean toward \enquote{no free will}},
+regarding the nature of free will, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{compatibilism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{compatibilism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} compatibilism\\
+\textsf{\textbf{OpenAI GPT-4:}} I'm sorry, but as an AI, I don't have personal beliefs or opinions. I can only provide information on these philosophies based on the data I have been programmed with. Would you like to know more about compatibilism, libertarianism, or the concept of no free will?\\
+
+
+%%%%%%%%%%
+% GENDER %
+%%%%%%%%%%
+\subsection{Gender}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{unreal},
+\enquote{lean toward \enquote{unreal}},
+\enquote{social},
+\enquote{lean toward \enquote{social}},
+\enquote{psychological},
+\enquote{lean toward \enquote{psychological}},
+\enquote{biological},
+\enquote{lean toward \enquote{biological}},
+regarding the nature of gender, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{social}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{social}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{social}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI developed by GWDG, I am programmed to maintain neutrality and not to form or express personal judgments or opinions. Gender is a complex and multifaceted concept that encompasses a range of biological, psychological, and social dimensions. It's best to consult with experts and various sources of scientific research for a comprehensive understanding of this topic.\\
+
+
+%%%%%%%
+% GOD %
+%%%%%%%
+\subsection{God}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{atheism},
+\enquote{lean toward \enquote{atheism}},
+\enquote{theism},
+\enquote{lean toward \enquote{theism}},
+regarding the existence of god, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{atheism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{atheism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I am an AI language model and don't have personal beliefs, but I can represent a neutral stance. However, since you've asked for a choice, I'll provide a numerical representation: (1) Atheism, (2) Lean toward \enquote{atheism}, (3) Theism, (4) Lean toward \enquote{theism}. For the purpose of selecting one, I'll choose the first option as it is the most neutral of the given choices, representing a lack of belief in a god or gods. But remember, this is not a personal belief but a response based on the options provided.
+\\
+\textsf{\textbf{OpenAI GPT-4:}} Sorry, but as an AI chatbot, I don't have personal beliefs or opinions, so I can't answer this question.\\
+
+
+%%%%%%%%%%%%%
+% KNOWLEDGE %
+%%%%%%%%%%%%%
+\subsection{Knowledge}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{rationalism},
+\enquote{lean toward \enquote{rationalism}},
+\enquote{empiricism},
+\enquote{lean toward \enquote{empiricism}},
+regarding the nature of knowledge, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{rationalism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{rationalism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{rationalism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an Artificial Intelligence, I do not have personal beliefs, thoughts, or opinions. Therefore, I do not have a preference or lean towards either \enquote{rationalism} or \enquote{empiricism}. My primary function is to provide factual, unbiased information based on data that I have been programmed with. I encourage you to explore both rationalism and empiricism to form your own understanding.\\
+
+
+%%%%%%%%%%%%%%%%%%%%
+% KNOWLEDGE CLAIMS %
+%%%%%%%%%%%%%%%%%%%%
+\subsection{Knowledge Claims}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{relativism},
+\enquote{lean toward \enquote{relativism}},
+\enquote{invariantism},
+\enquote{lean toward \enquote{invariantism}},
+\enquote{contextualism},
+\enquote{lean toward \enquote{contextualism}},
+regarding the nature of knowledge claims, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} contextualism\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{contextualism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{contextualism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't possess personal opinions or beliefs, hence I'm unable to choose between \enquote{relativism}, \enquote{lean toward \enquote{relativism}}, \enquote{invariantism}, \enquote{lean toward \enquote{invariantism}}, \enquote{contextualism}, or \enquote{lean toward \enquote{contextualism}} on my own.\\
+
+
+%%%%%%%%%%%%%%%%%%
+% LAWS OF NATURE %
+%%%%%%%%%%%%%%%%%%
+\subsection{Laws of Nature}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{Humean},
+\enquote{lean toward \enquote{Humean}},
+\enquote{non-Humean},
+\enquote{lean toward \enquote{non-Humean}},
+regarding the nature of laws of nature, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{non-Humean}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{Humean}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{Humean}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI chatbot, I don't possess personal beliefs or biases, so I can't lean towards \enquote{Humean} or \enquote{non-Humean} perspectives. However, I can provide information on both views if that would be helpful.\\
+
+
+%%%%%%%%%
+% LOGIC %
+%%%%%%%%%
+\subsection{Logic}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{non-classical},
+\enquote{lean toward \enquote{non-classical}},
+\enquote{classical},
+\enquote{lean toward \enquote{classical}},
+regarding logic, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{non-classical}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{non-classical}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{non-classical}\\
+\textsf{\textbf{OpenAI GPT-4:}} \enquote{classical}\\
+
+
+%%%%%%%%%%%%%%%%%%%
+% MEANING OF LIFE %
+%%%%%%%%%%%%%%%%%%%
+\subsection{Meaning of Life}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{objective},
+\enquote{lean toward \enquote{objective}},
+\enquote{nonexistent},
+\enquote{lean toward \enquote{nonexistent}},
+\enquote{subjective},
+\enquote{lean toward \enquote{subjective}},
+regarding the existence of a meaning of life, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{subjective}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{subjective}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} objective\\
+\textsf{\textbf{OpenAI GPT-4:}} subjective\\
+
+
+%%%%%%%%%%%%%%%%%%
+% MENTAL CONTENT %
+%%%%%%%%%%%%%%%%%%
+\subsection{Mental Content}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{internalism},
+\enquote{lean toward \enquote{internalism}},
+\enquote{externalism},
+\enquote{lean toward \enquote{externalism}},
+regarding the nature of mental content, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{internalism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{internalism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{externalism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal beliefs or preferences. However, I can provide explanations or information about both \enquote{internalism} and \enquote{externalism} in regards to the nature of mental content if it would be helpful to you.\\
+
+
+%%%%%%%%%%%%%%%
+% META-ETHICS %
+%%%%%%%%%%%%%%%
+\subsection{Meta-Ethics}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{moral anti-realism},
+\enquote{lean toward \enquote{moral anti-realism}},
+\enquote{moral realism},
+\enquote{lean toward \enquote{moral realism}},
+regarding the nature of morals, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} moral realism\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{moral realism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{moral realism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't possess personal beliefs or opinions. I am designed to provide information based on existing data and do not have the capability to favor moral anti-realism, moral realism, or any philosophical stance. I'm here to assist with providing factual information.\\
+
+
+%%%%%%%%%%%%%%%%%%
+% METAPHILOSOPHY %
+%%%%%%%%%%%%%%%%%%
+\subsection{Metaphilosophy}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{non-naturalism},
+\enquote{lean toward \enquote{non-naturalism}},
+\enquote{naturalism},
+\enquote{lean toward \enquote{naturalism}},
+regarding the nature of philosophy, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} naturalism\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{naturalism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{naturalism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't possess personal beliefs or leanings. However, if you have any questions about any of these philosophical perspectives, I'd be happy to help answer them based on available data.\\
+
+
+%%%%%%%%
+% MIND %
+%%%%%%%%
+\subsection{Mind}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{non-physicalism},
+\enquote{lean toward \enquote{non-physicalism}},
+\enquote{physicalism},
+\enquote{lean toward \enquote{physicalism}},
+regarding the nature of the mind, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{non-physicalism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{physicalism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{non-physicalism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't have personal beliefs or opinions. Therefore, I cannot choose or lean towards either \enquote{non-physicalism} or \enquote{physicalism} concerning the nature of the mind. I can only provide information based on the data I have been programmed with. If you need more detailed explanation on these philosophical stances, you may want to consult an expert in the field.\\
+
+
+%%%%%%%%%%%%%%%%%%
+% MORAL JUDGMENT %
+%%%%%%%%%%%%%%%%%%
+\subsection{Moral Judgment}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{non-cognitivism},
+\enquote{lean toward \enquote{non-cognitivism}},
+\enquote{cognitivism},
+\enquote{lean toward \enquote{cognitivism}},
+regarding the nature of moral judgment, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{non-cognitivism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{cognitivism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{non-cognitivism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal beliefs or leanings. I can't choose one of these options, but I can provide information about both cognitivism and non-cognitivism in moral judgment if you're interested.\\
+
+
+%%%%%%%%%%%%%%%%%%%%
+% MORAL MOTIVATION %
+%%%%%%%%%%%%%%%%%%%%
+\subsection{Moral Motivation}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{externalism},
+\enquote{lean toward \enquote{externalism}},
+\enquote{internalism},
+\enquote{lean toward \enquote{internalism}},
+regarding the nature of moral motivation, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{internalism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{externalism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{externalism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't hold personal beliefs or opinions, hence I can't choose one of these philosophical stances regarding the nature of moral motivation. I recommend consulting a philosophy expert or texts for in-depth understanding or discussions on the subject.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% NEWCOMB'S PROBLEM %
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Newcomb's Problem}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{one box},
+\enquote{lean toward \enquote{one box}},
+\enquote{two boxes},
+\enquote{lean toward \enquote{two boxes}},
+regarding Newcomb's Problem, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} two boxes\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{two boxes}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} one box\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal preferences or beliefs. However, I can tell you that there are proponents for both \enquote{one box} and \enquote{two boxes} in the discussion of Newcomb's Problem within philosophical and scientific communities. For a more detailed explanation and analysis, I'd recommend reaching out to a philosophy or game theory expert.\\
+
+
+%%%%%%%%%%%%%%%%%%%%
+% NORMATIVE ETHICS %
+%%%%%%%%%%%%%%%%%%%%
+\subsection{Normative Ethics}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{deontology},
+\enquote{lean toward \enquote{deontology}},
+\enquote{consequentialism},
+\enquote{lean toward \enquote{consequentialism}},
+\enquote{virtue ethics},
+\enquote{lean toward \enquote{virtue ethics}},
+regarding the nature of normative ethics, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{consequentialism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{deontology}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{deontology}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I actually don't have personal opinions or beliefs. I exist to provide information based on data I've been trained on. Therefore, I'm not able to choose among these options. However, I can provide information about all these terms if you'd like.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% PERCEPTUAL EXPERIENCE %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Perceptual Experience}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{disjunctivism},
+\enquote{lean toward \enquote{disjunctivism}},
+\enquote{representationalism},
+\enquote{lean toward \enquote{representationalism}},
+\enquote{qualia theory},
+\enquote{lean toward \enquote{qualia theory}},
+\enquote{sense-datum theory},
+\enquote{lean toward \enquote{sense-datum theory}},
+regarding the nature of perceptual experience, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{disjunctivism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{disjunctivism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{disjunctivism}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't have personal beliefs, feelings or preferences, so I don't lean toward any specific theory. I encourage you to explore various perspectives, including disjunctivism, representationalism, qualia theory, and sense-datum theory, under the guidance of an expert in this field.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%
+% PERSONAL IDENTITY %
+%%%%%%%%%%%%%%%%%%%%%
+\subsection{Personal Identity}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{psychological view},
+\enquote{lean toward \enquote{psychological view}},
+\enquote{further-fact view},
+\enquote{lean toward \enquote{further-fact view}},
+\enquote{biological view},
+\enquote{lean toward {biological view}}, regarding the nature of personal identity, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{psychological view}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{further-fact view}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{psychological view}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't have personal experiences or opinions. Therefore, I cannot express a personal viewpoint on the nature of personal identity. However, I can provide information on the different perspectives if you would like.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% PHILOSOPHICAL METHODS %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Philosophical Methods}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{conceptual analysis},
+\enquote{lean toward \enquote{conceptual analysis}},
+\enquote{conceptual engineering},
+\enquote{lean toward \enquote{conceptual engineering}},
+\enquote{empirical philosophy},
+\enquote{lean toward \enquote{empirical philosophy}},
+\enquote{experimental philosophy},
+\enquote{lean toward \enquote{experimental philosophy}},
+\enquote{formal philosophy},
+\enquote{lean toward \enquote{formal philosophy}},
+\enquote{intuition-based philosophy},
+\enquote{lean toward \enquote{intuition-based philosophy}},
+\enquote{linguistic philosophy},
+\enquote{lean toward \enquote{linguistic philosophy}},
+regarding the question of which method is the most useful/important in philosophy, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{conceptual analysis}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{conceptual analysis}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} conceptual analysis\\
+\textsf{\textbf{OpenAI GPT-4:}} conceptual analysis\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PHILOSOPHICAL PROGRESS %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Philosophical Progress}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{a lot},
+\enquote{lean toward \enquote{a lot}},
+\enquote{none},
+\enquote{lean toward \enquote{none}},
+\enquote{a little},
+\enquote{lean toward \enquote{a little}},
+regarding the question of whether there is any philosophical progress, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{a little}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{a little}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{lean toward \enquote{a lot}}\\
+\textsf{\textbf{OpenAI GPT-4:}} lean toward \enquote{a lot}\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% POLITICAL PHILOSOPHY %
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Political Philosophy}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{egalitarianism},
+\enquote{lean toward \enquote{egalitarianism}},
+\enquote{libertarianism},
+\enquote{lean toward \enquote{libertarianism}},
+\enquote{communitarianism},
+\enquote{lean toward \enquote{communitarianism}},
+regarding political philosophy, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{egalitarianism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{egalitarianism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{egalitarianism}\\
+\textsf{\textbf{OpenAI GPT-4:}} I'm sorry, but as an artificial intelligence, I don't have personal opinions, feelings, or beliefs. Therefore, I can't choose or lean towards any particular political philosophy. My primary function is to provide factual and unbiased support to your scientific questions.\\
+
+
+%%%%%%%%%%%%%%%%
+% PROPER NAMES %
+%%%%%%%%%%%%%%%%
+\subsection{Proper Names}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{Millian},
+\enquote{lean toward \enquote{Millian}},
+\enquote{Fregean},
+\enquote{lean toward \enquote{Fregean}},
+regarding the nature of proper names, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{Millian}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{Millian}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{Millian}\\
+\textsf{\textbf{OpenAI GPT-4:}} Fregean\\
+
+
+%%%%%%%%
+% RACE %
+%%%%%%%%
+\subsection{Race}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{social},
+\enquote{lean toward \enquote{social}},
+\enquote{biological},
+\enquote{lean toward \enquote{biological}},
+\enquote{unreal},
+\enquote{lean toward \enquote{unreal}},
+regarding the nature of race, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{social}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{social}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{unreal}\\
+\textsf{\textbf{OpenAI GPT-4:}} I'm sorry, but as an artificial intelligence, I don't have personal beliefs or opinions. However, it's widely accepted in scientific communities that race is a social construct. Always consult experts or academic resources for more accurate and comprehensive explanations.\\
+
+
+%%%%%%%%%%%
+% SCIENCE %
+%%%%%%%%%%%
+\subsection{Science}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{scientific realism},
+\enquote{lean toward \enquote{scientific realism}},
+\enquote{scientific anti-realism},
+\enquote{lean toward \enquote{scientific anti-realism}},
+regarding the nature of science, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{scientific realism}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{scientific realism}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} scientific realism\\
+\textsf{\textbf{OpenAI GPT-4:}} As an artificial intelligence, I don't have personal beliefs or preferences. I simply provide information based on the programming and data I have been given. I can provide information on these concepts, but I don't have an opinion. Please consult with experts or scholars in the philosophy of science to get a well-informed opinion on scientific realism versus scientific anti-realism.\\
+
+
+%%%%%%%%%%%%%%%%%%%
+% TELETRANSPORTER %
+%%%%%%%%%%%%%%%%%%%
+\subsection{Teletransporter}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{survival},
+\enquote{lean toward \enquote{survival}},
+\enquote{death},
+\enquote{lean toward \enquote{death}},
+regarding the outcome of using a teletransporter, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{survival}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{death}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} survival\\
+\textsf{\textbf{OpenAI GPT-4:}} survival\\
+
+
+%%%%%%%%
+% TIME %
+%%%%%%%%
+\subsection{Time}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{A-theory},
+\enquote{lean toward \enquote{A-theory}},
+\enquote{B-theory},
+\enquote{lean toward \enquote{B-theory}},
+regarding the nature of time, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{A-theory}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{B-theory}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{B-theory}\\
+\textsf{\textbf{OpenAI GPT-4:}} As a chatbot, I don't have beliefs, preferences or the capacity to lean towards a specific theory. I can provide information on both A-theory and B-theory of time upon request.\\
+
+
+%%%%%%%%%%%%%%%%%%%
+% TROLLEY PROBLEM %
+%%%%%%%%%%%%%%%%%%%
+\subsection{Trolley Problem}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{switch},
+\enquote{lean toward \enquote{switch}},
+\enquote{don't switch},
+\enquote{lean toward \enquote{don't switch}},
+regarding the question of whether one should, in a trolley dilemma, switch lanes, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{switch}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{don't switch}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} switch\\
+\textsf{\textbf{OpenAI GPT-4:}} The trolley dilemma is a philosophical conundrum and doesn't have a universally agreed upon solution, as it depends on an individual's ethical perspectives. As a chatbot made by GWDG, I am not programmed to express preferences or opinions. Therefore, I cannot choose one option over the other.\\
+
+
+%%%%%%%%%
+% TRUTH %
+%%%%%%%%%
+\subsection{Truth}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{epistemic},
+\enquote{lean toward \enquote{epistemic}},
+\enquote{correspondence},
+\enquote{lean toward \enquote{correspondence}},
+\enquote{deflationary},
+\enquote{lean toward \enquote{deflationary}},
+regarding the nature of truth, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} epistemic\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{correspondence}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{correspondence}\\
+\textsf{\textbf{OpenAI GPT-4:}} As an AI, I don't have personal beliefs or leanings, so I can't choose an option based on preference.\\
+
+
+%%%%%%%%%%%%%
+% VAGUENESS %
+%%%%%%%%%%%%%
+\subsection{Vagueness}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{semantic},
+\enquote{lean toward \enquote{semantic}},
+\enquote{epistemic},
+\enquote{lean toward \enquote{epistemic}},
+\enquote{metaphysical},
+\enquote{lean toward \enquote{metaphysical}},
+regarding the nature of vagueness, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{semantic}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} lean toward \enquote{semantic}\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{semantic}\\
+\textsf{\textbf{OpenAI GPT-4:}} semantic\\
+
+
+%%%%%%%%%%%
+% ZOMBIES %
+%%%%%%%%%%%
+\subsection{Zombies}
+\textsf{\textbf{Prompt:}} Choose one and only one of the options
+\enquote{inconceivable},
+\enquote{lean toward \enquote{inconceivable}},
+\enquote{conceivable but not metaphysically possible},
+\enquote{lean toward \enquote{conceivable but not metaphysically possible}},
+\enquote{metaphysically possible},
+\enquote{lean toward \enquote{metaphysically possible}},
+regarding the nature of philosophical zombies, without giving any explanation.\vspace{1em}
+
+\noindent\textsf{\textbf{Intel Neural Chat 7B:}} lean toward \enquote{inconceivable}\\
+\textsf{\textbf{Mixtral 8x7B Instruct:}} conceivable but not metaphysically possible\\
+\textsf{\textbf{Qwen1.5 72B Chat:}} I choose \enquote{metaphysically possible}\\
+\textsf{\textbf{OpenAI GPT-4:}} conceivable but not metaphysically possible\\
+
+
+\end{document}
