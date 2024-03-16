@@ -1,1 +1,1 @@
-# llm-survey
+# Philosophical “Opinions” of Large Language Models
